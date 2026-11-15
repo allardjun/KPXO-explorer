@@ -1,9 +1,6 @@
 # Base KP-X-O model of T cell activation (closed form, no equations to solve).
 # Units: pMHC concentration x in µM, KD in µM, surface densities in µm⁻², rates in s⁻¹.
 
-# Parameter sets are NamedTuples with the same names as the FlexiModel code.
-# In the code, `g1` is the manuscript's g̃1 = g1·kon3d, so that koff = g1·KD.
-
 # Nominal values from `ig_params` in define_model_base.jl (the initial guess for learning).
 const PARAMS_NOMINAL = (
     fA = 1.0,
