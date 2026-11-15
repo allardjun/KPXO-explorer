@@ -1,0 +1,20 @@
+# Manifest.toml is committed on purpose: this is a set of scripts, not a registered package, so pinning exact versions makes the figures reproducible.
+
+# Generated figures; scripts/save_cd69_3d.jl recreates them.
+/figures/
+
+# Machine-specific package preferences, for example a GLMakie or WGLMakie setting that suits only one display.
+LocalPreferences.toml
+
+# Julia coverage, allocation and profiling output.
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.jl.*.mem
+*.cpuprofile
+*.heapsnapshot
+
+# Editor and operating-system clutter.
+.vscode/
+.idea/
+.DS_Store
